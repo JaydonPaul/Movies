@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/d5d8361234.js" crossorigin="anonymous"></script>
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+ 
 <body>
     <header>
         <div class="row">
@@ -17,9 +19,9 @@
                 <h1 class="logo__text">Fantastic Films</h1>
             </figure>
             <ul class="nav__links--list">
-                <a href="./index.html"><li class="nav__link link__hover-effect link__hover-effect--black">Home</li></a>
+                <a href="#" class="color__theme"><li class="nav__link link__hover-effect link__hover-effect--coral color__theme">Home</li></a>
                 <a href="#"><li class="nav__link link__hover-effect link__hover-effect--black">Contact us</li></a>
-                <a href="#"><li class="nav__link movies__link">Movies</li></a>
+                <a href="./movies.html"><li class="nav__link movies__link">Movies</li></a>
             </ul>
             </nav>
             
@@ -32,11 +34,11 @@
                 <div class="landing__wrapper">
                     <h1 class="landing__title color__theme">The best platform in Grenada to watch online movies</h1>
                     <h5 class="landing__sub-title">BROWSE THROUGH THE LATEST MOVIES IN ALL YOUR <span class="color__theme">FAVORITE CATEGORIES</span> </h5>
-                    <form class="input__wrapper">
+                    <form class="input__wrapper" action="./movies.html" >
                         <input class="input" type="text" placeholder="Eg. Fast and Furious">
-                        <button class="magn">
+                        <button id="magn">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
+                        </button> 
                     </form>
                 </div>
             </div>
@@ -44,4 +46,5 @@
     </section>
 
 </body>
+<script src="./index.js"></script>
 </html>
