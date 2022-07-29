@@ -1,6 +1,8 @@
-async function main(){
-    const movies = await fetch ("http://www.omdbapi.com/?apikey=55f7d0917&s")
-    console.log(movies)
+function saveMovies(){
+    var input = document.getElementById("movie__input");
+    localStorage.setItem("moviename", input.value);
+    var storedValue = localStorage.getItem("moviename", input.value);
 }
 
-main();
+
+

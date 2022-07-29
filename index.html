@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Fantastic Films</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="./index.css">
     <script src="https://kit.fontawesome.com/d5d8361234.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    
- 
+    <script src="./index.js"></script>
 <body>
     <header>
         <div class="row">
@@ -34,9 +35,9 @@
                 <div class="landing__wrapper">
                     <h1 class="landing__title color__theme">The best platform in Grenada to watch online movies</h1>
                     <h5 class="landing__sub-title">BROWSE THROUGH THE LATEST MOVIES IN ALL YOUR <span class="color__theme">FAVORITE CATEGORIES</span> </h5>
-                    <form class="input__wrapper" action="./movies.html" >
-                        <input class="input" type="text" placeholder="Eg. Fast and Furious">
-                        <button id="magn">
+                    <form  class="input__wrapper"  onsubmit="saveMovies()" action="./movies.html">
+                        <input id="movie__input"  value="" class="input"  type="text" placeholder="Eg. Fast and Furious">
+                        <button id="magn" >
                         <i class="fa-solid fa-magnifying-glass"></i>
                         </button> 
                     </form>
@@ -46,5 +47,5 @@
     </section>
 
 </body>
-<script src="./index.js"></script>
+
 </html>

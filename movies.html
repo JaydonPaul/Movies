@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
-    <link rel="stylesheet" href="./styles1.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="./movies.css">
     <script src="https://kit.fontawesome.com/d5d8361234.js" crossorigin="anonymous"></script>
 </head>
 </head>
 <body>
     <header>
+        <div class="conatainer">
         <div class="row">
             <div class="bg bg__img">
             <nav class="">
@@ -26,16 +28,50 @@
             </nav>
             <div class="search__wrapper">
                 <h1 class="search__title">Search for a Movie</h1>
-            <form class="input__wrapper" action="./movies.html" >
-                <input class="input" type="text" placeholder="Eg. Fast and Furious">
-                <button id="magn">
+            <form class="input__wrapper" onsubmit="return (search(), renderMovies())">
+                <input id="movie__input" value="" class="input" type="text" placeholder="Eg. Fast and Furious">
+                <button id="magn" >
                 <i class="fa-solid fa-magnifying-glass"></i>
                 </button> 
             </form>
         </div>
         </div>
         </div>
-        </nav>
+    </div>
 </header>
+<section>
+    <div class="container">
+        <div class="rowd">
+            <div id="spinner" class="loading__state">
+                <i class="fa-solid fa-spinner"></i>  
+             </div>
+
+            <div class="search">
+            <div class="search__results">
+                <h5 class="results__for"> Search results for $
+                </h5>
+            </div>
+            <div class="movies">
+                <div class="movie">
+                    <figure class="movie__img">
+                        <img src="" alt="">
+                    </figure>
+
+                    <h5 class="movie__name">Movie Name</h5>
+                    <br>
+
+                    <div class="movie__description">
+                        <p class="movie__year"></p>
+                        <p class="movie__type"></p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+ 
+</section>
 </body>
+<script src="./movies.js"></script>
 </html>
