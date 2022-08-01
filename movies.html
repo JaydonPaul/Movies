@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Films</title>
     <link rel="icon" href="./assets/logo.png">
     <link rel="stylesheet" href="./movies.css">
     <script src="https://kit.fontawesome.com/d5d8361234.js" crossorigin="anonymous"></script>
@@ -23,16 +23,13 @@
             <ul class="nav__links--list">
                 <a href="./index.html"><li class="nav__link link__hover-effect link__hover-effect--coral">Home</li></a>
                 <a href="#"><li class="nav__link link__hover-effect link__hover-effect--coral">Contact us</li></a>
-                <a href="#"><li class="nav__link movies__link">Movies</li></a>
+                <a href="#"><li class="nav__link movies__link">Films</li></a>
             </ul>
             </nav>
             <div class="search__wrapper">
-                <h1 class="search__title">Search for a Movie</h1>
-            <form class="input__wrapper" onsubmit="return (search(), renderMovies())">
-                <input id="movie__input" value="" class="input" type="text" placeholder="Eg. Fast and Furious">
-                <button id="magn" >
-                <i class="fa-solid fa-magnifying-glass"></i>
-                </button> 
+                <h1 class="search__title">Search for a Film</h1>
+            <form class="input__wrapper" onsubmit="search()">
+              
             </form>
         </div>
         </div>
@@ -42,30 +39,17 @@
 <section>
     <div class="container">
         <div class="rowd">
-            <div id="spinner" class="loading__state">
-                <i class="fa-solid fa-spinner"></i>  
+            <div id="spinner" class="">
+                <i class="fa-solid fa-spinner loading__state--spinner"></i>  
              </div>
 
             <div class="search">
             <div class="search__results">
-                <h5 class="results__for"> Search results for $
-                </h5>
+                <h5 class="results__for"></h5>
             </div>
             <div class="movies">
-                <div class="movie">
-                    <figure class="movie__img">
-                        <img src="" alt="">
-                    </figure>
-
-                    <h5 class="movie__name">Movie Name</h5>
-                    <br>
-
-                    <div class="movie__description">
-                        <p class="movie__year"></p>
-                        <p class="movie__type"></p>
-                    </div>
-        
-                </div>
+               
+            </div>
             </div>
         </div>
         </div>
